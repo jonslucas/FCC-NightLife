@@ -2,18 +2,37 @@
 
 angular.module('nightLifeApp')
   .factory('Yelp', function ($http) {
-    // Service logic
-    // ...
-    navigator.geolocation.getCurrentPosition(function (position) {
-      console.log(position.coords.latitude);
-      console.log(position.coords.longitude);
-    });
-    var meaningOfLife = 42;
+
+    //example url:
+    //http://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452
+
+
+    var get_coords = function() {
+      var lat,
+          long;
+      navigator.geolocation.getCurrentPosition(function (position) {
+        console.log(position.coords.latitude);
+        console.log(position.coords.longitude);
+        lat = position.coords.latitude;
+        long = position.coords.longitude;
+      });
+      return {
+        lat:lat,
+        lon: long
+      };
+    };
 
     // Public API here
     return {
-      someMethod: function () {
-        return meaningOfLife;
+      search: function(location) {
+        $http({
+          method: 'get',
+          url: 'http://api.yelp.com/v2/search',
+          params: {
+            type: bar,
+            location: location
+          }
+        })
       }
     };
   });

@@ -29,7 +29,7 @@ angular.module('nightLifeApp')
           method: 'get',
           url: 'http://api.yelp.com/v2/search',
           params: {
-            type: bar,
+            type: 'bar',
             location: location
           }
         })

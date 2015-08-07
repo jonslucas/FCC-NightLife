@@ -40,6 +40,12 @@ var all = {
       }
     }
   },
+  yelp: {
+    consumer_key: 'iteOz4IRqHxrctxG1waveQ',
+    consumer_secret: 'cgH7O-ONTvkmhU-wu4bUFNrfdYU',
+    token: 'RhgPhRR10zD_rdDP5FOnDlYZc-Z4t2b7',
+    token_secret:'RhgPhRR10zD_rdDP5FOnDlYZc-Z4t2b7'
+  }
 
 };
 

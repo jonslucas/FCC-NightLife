@@ -27,10 +27,9 @@ angular.module('nightLifeApp')
       search: function(location) {
         $http({
           method: 'get',
-          url: 'http://api.yelp.com/v2/search',
+          url: '/api/yelp/'+location,
           params: {
-            type: 'bar',
-            location: location
+            zip: location
           }
         })
       }

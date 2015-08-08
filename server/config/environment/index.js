@@ -43,8 +43,8 @@ var all = {
   yelp: {
     consumer_key: 'iteOz4IRqHxrctxG1waveQ',
     consumer_secret: 'cgH7O-ONTvkmhU-wu4bUFNrfdYU',
-    token: 'RhgPhRR10zD_rdDP5FOnDlYZc-Z4t2b7',
-    token_secret:'RhgPhRR10zD_rdDP5FOnDlYZc-Z4t2b7'
+    token: 'T6WU2kJvbXiiwYNElEY3YVwLyWm6REKX',
+    token_secret:'0wC8heTn6DrfjdDo9O7FSugQTZ8'
   }
 
 };

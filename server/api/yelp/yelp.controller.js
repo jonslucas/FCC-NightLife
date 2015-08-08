@@ -3,16 +3,25 @@
 var _ = require('lodash');
 var Yelp = require('./yelp.model');
 var yConfig = require('../../config/environment').yelp;
+//console.log('ycConfig: '+JSON.stringify(yConfig));
 var yelp = require('yelp').createClient(yConfig);
+
 //console.log('yelp: '+JSON.stringify(yelp));
-//var search = function(req, res) {
-//  console.log('req.params.zip'+req.params.zip);
-//  yelp.search({term: 'bar', location: '28739'}, function(err, bars){
-//    if(err) { return handleError(res, err); }
-//    if(!bars) { return res.send(404); }
-//    return res.json(bars);
-//  });
-//};
+yelp.search({term: 'bar', location: '28739'}, function(err, bars){
+  if(err) { return console.log(err); }
+  if(!bars) { return console.log(404); }
+  //return res.json(bars);
+  return console.log('bars: '+JSON.stringify(bars));
+});
+
+exports.search = function(req, res) {
+  console.log('req.params.zip: '+req.params.zip);
+  yelp.search({term: 'bar', location: '28739'}, function(err, bars){
+    if(err) { return handleError(res, err); }
+    if(!bars) { return res.send(404); }
+    return res.json(bars);
+  });
+};
 
 
 // Get list of yelps

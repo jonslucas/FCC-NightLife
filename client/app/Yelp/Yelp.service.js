@@ -24,13 +24,17 @@ angular.module('nightLifeApp')
 
     // Public API here
     return {
-      search: function(location) {
+      search: function(location, cb) {
         $http({
           method: 'get',
-          url: '/api/yelp/'+location,
+          url: '/api/yelp/',
           params: {
             zip: location
           }
+        }).success(function(data){
+          cb(null, data);
+        }).error(function (err) {
+          cb(err);
         })
       }
     };

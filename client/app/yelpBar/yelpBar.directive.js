@@ -1,7 +1,12 @@
 'use strict';
 
 var ctrl = function($scope) {
-  console.log($scope.bar);
+  var ctrl = this;
+  ctrl.going = 0;
+  //console.log($scope.bar);
+  ctrl.checkIn = function() {
+    ctrl.going += 1;
+  };
 };
 
 angular.module('nightLifeApp')

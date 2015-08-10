@@ -1,0 +1,11 @@
+.barCard {
+  border: .1em solid black;
+  border-radius: 1em;
+  width: 80%;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.barCard > div {
+  display: inline-block;
+}

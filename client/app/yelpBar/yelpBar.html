@@ -1,3 +1,9 @@
-<div>
-  {{bar}}
+<div class="barCard">
+  <!--{{bar}}-->
+  <div class="goingBtn btn btn-default text-left" ng-click="ctrl.checkIn()">Check-in</div>
+  <div class="barName text-center">
+    {{bar.name}}
+  </div>
+  <div class="rsvpAmt text-right">{{ctrl.going}} going</div>
+
 </div>

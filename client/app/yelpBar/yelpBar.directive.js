@@ -1,11 +1,18 @@
 'use strict';
 
+var ctrl = function($scope) {
+  console.log($scope.bar);
+};
+
 angular.module('nightLifeApp')
   .directive('yelpBar', function () {
     return {
       templateUrl: 'app/yelpBar/yelpBar.html',
       restrict: 'EA',
-      link: function (scope, element, attrs) {
-      }
+      scope: {
+        bar: '=data'
+      },
+      controller: ctrl,
+      controllerAs: 'ctrl'
     };
   });

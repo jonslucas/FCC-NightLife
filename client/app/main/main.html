@@ -1,6 +1,9 @@
 <div>
-  <input type="search" ng-model="location"/>
-  <div class="btn btn-primary" ng-click="search()">Search</div>
+  <div class="search">
+    <input type="search" class="form-control search-input" ng-model="location"/>
+    <button type="submit" class="btn btn-primary" ng-click="search()">Search</button>
+  </div>
+
   <div ng-repeat="bar in bars">
     <br>
     <yelp-bar data="bar"></yelp-bar>

@@ -1,6 +1,9 @@
 <div class="barCard">
-  <!--{{bar}}-->
-  <div class="goingBtn btn btn-default text-left" ng-click="ctrl.checkIn()">Check-in</div>
+  <div class="btns">
+    <div class="goingBtn btn btn-default text-left" ng-click="ctrl.checkIn()" ng-hide="ctrl.added">Check-in</div>
+    <div class="goingBtn btn btn-default text-left" ng-click="ctrl.remove()" ng-show="ctrl.added">Check-out</div>
+  </div>
+
   <div class="barName text-center">
     {{bar.name}}
   </div>

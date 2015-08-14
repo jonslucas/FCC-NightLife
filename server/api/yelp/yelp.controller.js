@@ -8,7 +8,7 @@ var yelp = require('yelp').createClient(yConfig);
 exports.search = function(req, res) {
   console.log('search called');
   console.log('req.query: '+JSON.stringify(req.query));
-  yelp.search({term: 'bar', location: req.query.zip}, function(err, bars){
+  yelp.search({term: 'night life', location: req.query.zip}, function(err, bars){
     if(err) { return handleError(res, err); }
     if(!bars) { return res.send(404); }
     return res.json(bars);

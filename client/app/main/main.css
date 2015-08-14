@@ -8,3 +8,13 @@
   width: 88%;
   display:inline-block;
 }
+.background {
+  width: 100%;
+  display: inline-block;
+  background-image: url("../../assets/images/background.png");
+  background-size: 100%;
+  background-position: 50% 50%;
+  color: transparent;
+  text-shadow: none;
+
+}

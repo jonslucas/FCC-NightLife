@@ -1,9 +1,23 @@
 .barCard {
-  border: .1em solid black;
-  border-radius: 1em;
+  border-radius: .5em;
   width: 80%;
   padding: 1em;
   margin-left: auto;
   margin-right: auto;
+  -webkit-box-shadow: 3px 6px 47px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 6px 47px -1px rgba(0,0,0,0.75);
+  box-shadow: 3px 6px 47px -1px rgba(0,0,0,0.75);
 }
-
+.barCard > div {
+  display: inline-block;
+}
+.barName {
+  padding-top: .4em;
+}
+.btns {
+  width: 7em;
+}
+.rsvpAmt {
+  padding-top: .4em;
+  float: right;
+}

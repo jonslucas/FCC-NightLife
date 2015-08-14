@@ -1,12 +1,12 @@
 <div class="barCard">
   <div class="btns">
-    <div class="goingBtn btn btn-default text-left" ng-click="ctrl.checkIn()" ng-hide="ctrl.added">Check-in</div>
-    <div class="goingBtn btn btn-default text-left" ng-click="ctrl.remove()" ng-show="ctrl.added">Check-out</div>
+    <div class="goingBtn btn btn-default" ng-click="ctrl.checkIn()" ng-hide="ctrl.added">Check-in</div>
+    <div class="goingBtn btn btn-default" ng-click="ctrl.remove()" ng-show="ctrl.added">Check-out</div>
   </div>
 
-  <div class="barName text-center">
+  <div class="barName">
     {{bar.name}}
   </div>
-  <div class="rsvpAmt text-right">{{ctrl.going}} going</div>
+  <div class="rsvpAmt">{{ctrl.going}} going</div>
 
 </div>

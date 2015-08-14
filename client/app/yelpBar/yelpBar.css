@@ -7,6 +7,7 @@
   -webkit-box-shadow: 3px 6px 47px -1px rgba(0,0,0,0.75);
   -moz-box-shadow: 3px 6px 47px -1px rgba(0,0,0,0.75);
   box-shadow: 3px 6px 47px -1px rgba(0,0,0,0.75);
+  background-color: rgba(153, 204, 255, .80);
 }
 .barCard > div {
   display: inline-block;

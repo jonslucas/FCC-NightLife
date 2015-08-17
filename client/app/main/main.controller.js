@@ -1,10 +1,10 @@
 'use strict';
 
 angular.module('nightLifeApp')
-  .controller('MainCtrl', function ($scope, Yelp) {
+  .controller('MainCtrl', function ($scope, $timeout, Yelp) {
+    $scope.bars = [];
     $scope.search= function () {
       if(!$scope.location) { return; }
-      console.log('location: '+$scope.location);
       Yelp.search($scope.location, function (err, resp) {
         if(err) { return console.error(err); }
         $scope.bars = resp.businesses;

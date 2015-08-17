@@ -1,12 +1,15 @@
 <div class="body">
 
+  <div class="debug">
+    <button class="btn btn-danger" ng-click="addToBars()">Add</button>
+  </div>
   <div class="search">
     <i class="fa fa-search fa-2x search-icon"></i>
     <input type="search" class="form-control search-input" ng-model="location"/>
     <button type="submit" class="btn search-btn btn-primary" ng-click="search()">Search</button>
   </div>
 
-  <div ng-repeat="bar in bars" class="animated fadeInRight">
+  <div ng-repeat="bar in bars track by $index" class="animated fadeInRight">
     <yelp-bar data="bar"></yelp-bar>
   </div>
 </div>

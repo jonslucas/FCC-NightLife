@@ -11,11 +11,4 @@ angular.module('nightLifeApp')
 
     };
 
-    $scope.addToBars = function () {
-      if(yelpData.length>0) {
-        $scope.bars.push(yelpData.shift());
-      }
-
-    };
-
   });

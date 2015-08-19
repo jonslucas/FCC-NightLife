@@ -4,14 +4,18 @@ var ctrl = function($scope) {
   var ctrl = this;
   ctrl.added = false;
   ctrl.going = 0;
-  //console.log($scope.bar);
+  ctrl.goingMsg = 'Check-in';
+  ctrl.star = ($scope.bar.rating>4);
   ctrl.checkIn = function() {
-    ctrl.added = true;
-    ctrl.going += 1;
-  };
-  ctrl.remove = function () {
-    ctrl.added = false;
-    ctrl.going -=1;
+    if(ctrl.added===true) {
+      ctrl.going -=1;
+      ctrl.goingMsg = 'Check-in';
+    }
+    else {
+      ctrl.going += 1;
+      ctrl.goingMsg = 'Check-out';
+    }
+    ctrl.added = ctrl.added!==true;
   };
 };
 

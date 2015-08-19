@@ -1,7 +1,9 @@
 <div class="barCard">
+  <i class="fa fa-star fa-2x fourStar" ng-show="ctrl.star"></i>
   <div class="btns">
-    <div class="goingBtn btn btn-default" ng-click="ctrl.checkIn()" ng-hide="ctrl.added">Check-in</div>
-    <div class="goingBtn btn btn-default" ng-click="ctrl.remove()" ng-show="ctrl.added">Check-out</div>
+    <div class="goingBtn btn btn-primary" ng-click="ctrl.checkIn()" ng-class="{removeBtn: ctrl.added}">
+      {{ctrl.goingMsg}}
+    </div>
   </div>
 
   <div class="barName">

@@ -2,6 +2,7 @@
 
 angular.module('nightLifeApp', [
   'ngCookies',
+  'ngAnimate',
   'ngResource',
   'ngSanitize',
   'ui.router',

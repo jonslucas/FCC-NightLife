@@ -34,7 +34,7 @@
   padding-top: .4em;
   float: right;
 }
-.fourStar {
+.star {
   position: absolute;
   right: -5px;
   top: -5px;
@@ -44,5 +44,14 @@
   -ms-transform: rotate(0.23turn);
   -o-transform: rotate(0.23turn);
   transform: rotate(0.23turn);
+  text-shadow: .1em .1em .1em black;
+}
+.gold {
   color:gold;
+}
+.silver {
+  color:silver;
+}
+.bronze {
+  color: rgb(230,127,50);
 }

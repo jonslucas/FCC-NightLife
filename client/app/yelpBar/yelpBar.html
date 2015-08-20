@@ -1,5 +1,6 @@
 <div class="barCard">
-  <i class="fa fa-star fa-2x fourStar" ng-show="ctrl.star"></i>
+  <i class="fa fa-star fa-2x star" ng-show="ctrl.star"
+     ng-class="{gold: bar.rating>4,silver: bar.rating>3 && bar.rating<=4,bronze: bar.rating===3}"></i>
   <div class="btns">
     <div class="goingBtn btn btn-primary" ng-click="ctrl.checkIn()" ng-class="{removeBtn: ctrl.added}">
       {{ctrl.goingMsg}}

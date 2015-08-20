@@ -5,7 +5,7 @@ var ctrl = function($scope) {
   ctrl.added = false;
   ctrl.going = 0;
   ctrl.goingMsg = 'Check-in';
-  ctrl.star = ($scope.bar.rating>4);
+  ctrl.star = ($scope.bar.rating>=3);
   ctrl.checkIn = function() {
     if(ctrl.added===true) {
       ctrl.going -=1;

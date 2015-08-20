@@ -17,10 +17,17 @@
 }
 .barName {
   padding-top: .4em;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 65%;
 
 }
 .btns {
-  width: 7em;
+  width: 18%;
+  vertical-align: top;
+  margin: 6px 0;
 
 }
 .goingBtn {
@@ -33,6 +40,7 @@
 .rsvpAmt {
   padding-top: .4em;
   float: right;
+  width: 15%;
 }
 .star {
   position: absolute;
@@ -54,4 +62,12 @@
 }
 .bronze {
   color: rgb(230,127,50);
+}
+@media (max-width: 870px) {
+  .barCard > div {
+    font-size: 1.25em;
+  }
+  .btns {
+    margin: 0;
+  }
 }
